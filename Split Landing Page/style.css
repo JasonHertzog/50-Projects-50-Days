@@ -32,7 +32,7 @@ h1 {
 
 .btn {
     position: absolute;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     left: 50%;
@@ -44,19 +44,21 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 15rem;
-    padding: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
-.split.left.btn:hover {
+.split.left .btn:hover {
     background-color: var(--left-btn-hover-color);
     border-color: var(--left-btn-hover-color);
 }
 
-.split.right.btn:hover {
+.split.right .btn:hover {
     background-color: var(--right-btn-hover-color);
     border-color: var(--right-btn-hover-color);
 }
+
 
 .container {
     position: relative;
